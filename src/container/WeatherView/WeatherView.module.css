@@ -1,0 +1,132 @@
+.main {
+  min-height: 100vh;
+  position: relative;
+  overflow: hidden;
+}
+
+.card {
+  padding-top: 15px;
+  color: white;
+  width: 70%;
+  min-height: 80vh;
+  text-align: center;
+  margin: 20px auto;
+  background-color: rgb(51, 45, 45);
+}
+.container {
+  position: absolute;
+  height: 100vh;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+.cloud1 {
+  position: absolute;
+  left: -30%;
+  top: 150px;
+  animation: move 5s linear 3s infinite;
+  width: 150px;
+  z-index: 0;
+}
+.cloud2 {
+  position: absolute;
+  left: -30%;
+  top: 200px;
+  animation: move 8s linear 0s infinite;
+  width: 150px;
+  z-index: 0;
+}
+
+.location {
+  font-size: 32px;
+  font-weight: 500px;
+
+  text-shadow: 3px 3px black;
+}
+.date {
+  font-size: 20px;
+  font-weight: 300;
+  font-style: italic;
+  text-shadow: 2px 2px black;
+}
+
+.weatherTemp {
+  position: relative;
+  display: inline-block;
+  margin: 30px;
+  background-color: rgba(255, 255, 255, 0.331);
+  border-radius: 16px;
+  padding: 15px 25px;
+  font-size: 90px;
+  text-shadow: 3px 6px rgba(0, 0, 0, 0.738);
+  box-shadow: 3px 6px rgba(130, 130, 130, 0.765);
+}
+.weather {
+  font-size: 30px;
+  font-weight: 600;
+  text-shadow: 3px 3px rgb(60, 60, 60);
+}
+.mainSunny {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  background-image: url("../../util/images/Sunny.svg");
+  filter: blur(9px);
+}
+.mainSnow {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  background-image: url("../../util/images/Snowy.svg");
+  filter: blur(9px);
+}
+.mainRainy {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  background-image: url("../../util/images/Rainy.svg");
+  filter: blur(9px);
+}
+
+.backgroundSunny {
+  background-image: url("../../util/images/Sunny.svg");
+  filter: brightness(98%);
+  background-size: cover;
+  background-position: center;
+  transition: background-image 0.7s cubic-bezier(0.43, 0.32, 0.01, 0.94);
+  box-shadow: 0 0 20px rgb(116, 116, 116);
+}
+.backgroundSnow {
+  filter: brightness(94%);
+  background-image: url("../../util/images/Snowy.svg");
+  background-size: cover;
+  background-position: center;
+  transition: background-image 0.7s cubic-bezier(0.43, 0.32, 0.01, 0.94);
+  box-shadow: 0 0 20px #000;
+}
+.backgroundRainy {
+  background-image: url("../../util/images/Rainy.svg");
+  background-size: cover;
+  transition: background-image 0.7s cubic-bezier(0.43, 0.32, 0.01, 0.94);
+  background-position: center;
+  box-shadow: 0 0 20px #000;
+}
+
+@media only screen and (max-width: 600px) {
+  .card {
+    width: 80%;
+  }
+}
+
+@keyframes move {
+  from {
+    left: -30%;
+  }
+  to {
+    left: 100%;
+  }
+}

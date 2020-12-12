@@ -1,0 +1,28 @@
+:root {
+  --primarycolor: #12232e;
+  --secondarycolor: #007cc7;
+  --tierchierycolor: #4da8da;
+  --shadowdark: #203647;
+  --shadowlight: #eefbfb;
+  --textcolor: #fff;
+}
+
+.nav {
+  background-color: rgba(84, 84, 84, 0.048);
+  color: var(--textcolor);
+  padding: 30px;
+  border-radius: 0 0 40px 30px;
+}
+
+.list {
+  text-align: center;
+}
+
+.icon {
+  letter-spacing: 0.3px;
+  font-weight: 500;
+  font-size: 25px;
+}
+.zIcon {
+  color: rgb(0, 219, 77);
+}

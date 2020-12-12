@@ -1,0 +1,20 @@
+.input {
+  margin: 40px auto;
+  min-width: 400px;
+  padding: 20px;
+  border-radius: 0px 0px 10px 10px;
+  box-shadow: 0px 5px rgba(44, 43, 43, 0.6);
+  border: 1px solid transparent;
+  background-color: rgba(226, 226, 226, 0.793);
+}
+.input:focus {
+  outline: none;
+  background-color: rgba(214, 214, 214, 0.786);
+}
+
+@media only screen and (max-width: 600px) {
+  .input {
+    margin: 20px auto;
+    min-width: 200px;
+  }
+}
