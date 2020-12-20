@@ -21,7 +21,7 @@ export const fetchStart = (query) => (dispatch) => {
   axios
     .get(
       `${api.baseURL}?q=${query.place.toLowerCase()}&units=metric&appid=${
-        api.key
+        process.env.REACT_APP_API_KEY
       }`
     )
     .then((res) => {
