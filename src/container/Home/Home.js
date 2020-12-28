@@ -39,7 +39,9 @@ class Home extends Component {
             <span className={classes.heading1}>
               Welcome To Weather<span style={{ color: "Lightgreen" }}>Z</span>
             </span>
-            <span className={classes.description}>Add the city below</span>
+            <span className={classes.description}>
+              Enter the city below you{" "}
+            </span>
 
             <SearchBar
               className={classes.searchBox}

@@ -25,7 +25,6 @@ export const fetchStart = (query) => (dispatch) => {
       }`
     )
     .then((res) => {
-      console.log(res.data);
       dispatch(fetchSuccess(res.data));
     })
     .catch((err) => {
